@@ -1,7 +1,7 @@
 package com.allinone.controller;
 
+import org.apache.tomcat.util.json.JSONParser;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -18,8 +18,12 @@ public class UserController {
     /**
      * 获取链接
      */
-    @RequestMapping("/getUrl")
-    public String get(){
-        return "get";
+    @RequestMapping("/getPic")
+    public String getPic(){
+        BaseUrlVo baseUrlVo = new BaseUrlVo();
+        baseUrlVo.setUrlName("freeImage");
+        baseUrlVo.setUrlValue("http://www.baidu.com");
+        baseUrlVo.setActive(true);
+        return baseUrlVo.toString();
     }
 }
