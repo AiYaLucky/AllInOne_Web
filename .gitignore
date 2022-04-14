@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#MacOs File
+.DS_Store
+
+#Client Files
+node_modules/
