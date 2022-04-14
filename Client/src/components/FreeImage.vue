@@ -1,32 +1,18 @@
 <template>
   <div class="main_div">
-    <div class="btn_div">
-      <button class="btn_default">默认按钮</button>
-      <strong class="url_name">导航名字</strong>
-      <br>
-      <p class="url_desc">导航说明</p>
+    <div class="main_div1">
     </div>
-    <div class="btn_div">
-      <button class="btn_default">默认按钮</button>
-    </div>
-    <div class="btn_div">
-      <button class="btn_default">默认按钮</button>
-    </div>
-    <div class="btn_div">
-      <button class="btn_default">默认按钮</button>
-    </div>
-    <div class="btn_div">
-      <button class="btn_default">默认按钮</button>
-    </div>
-    <div class="btn_div">
-      <button class="btn_default">默认按钮</button>
-    </div>
+    <div><ButtonUrl buttonName="前往" name="站点名字" desc="站点描述站点描述站点描述站点描述"></ButtonUrl></div>
+    <div><ButtonUrl buttonName="前往"></ButtonUrl></div>
+    <div><ButtonUrl buttonName="前往"></ButtonUrl></div>
   </div>
 </template>
 
 <script>
+import ButtonUrl from "@/components/ButtonUrl";
 export default {
   name: "FreeImage",
+  components: {ButtonUrl},
   methods: {
     getUrl: function () {
       alert(this.GLOBAL.BASE_URL + "user/getPic")
@@ -46,28 +32,24 @@ export default {
 
 <style>
 
-.btn_div {
-  width: 200px;
-  height: 100px;
-  background-color: aliceblue;
+.main_div {
+  left: calc(50% - 600px);
+  width: 1200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
   position: relative;
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-
-.btn_default {
-  position: absolute;
-  width: 70px;
-  height: 50px;
-  text-align: center;
-  left: 10%;
-  top: calc(50% - 25px);
 }
 
 .main_div {
-  left: calc(50% - 400px);
-  width: 800px;
+  left: calc(50% - 600px);
+  width: 1200px;
   height: auto;
+  background-color: #e7f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px black;
+  opacity: 75%;
   border: red solid;
   position: relative;
 }
