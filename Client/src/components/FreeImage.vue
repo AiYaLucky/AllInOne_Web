@@ -1,5 +1,5 @@
 <template>
-<img id="FreeImages" src="../assets/logo.png" @click="getUrl()">
+<!--<img id="FreeImages" src="../assets/logo.png" @click="getUrl()">-->
 </template>
 
 <script>

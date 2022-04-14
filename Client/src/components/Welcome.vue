@@ -15,16 +15,16 @@
       Ai Ya！Lucky！~
       <br>
     </h4>
-    <CopyrightFreeImages></CopyrightFreeImages>
+    <FreeImage></FreeImage>
   </div>
 
 </template>
 
 <script>
-import CopyrightFreeImages from "@/components/CopyrightFreeImages";
+import FreeImage from '../components/FreeImage.vue'
 export default {
-  name: 'Welcome',
-  components: {CopyrightFreeImages},
+  name: 'FreeImage',
+  components: {FreeImage},
   props: {
     welcomeMessage: String,
     description: String,
@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #welcome {
   color: #F4606C;
 }

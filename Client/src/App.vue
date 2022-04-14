@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/Welcome.vue'
+import HelloWorld from './components/FreeImage.vue'
 
 export default {
   name: 'App',
@@ -28,8 +28,6 @@ export default {
 }
 
 #logo{
-  width: 234px;
-  height: 234px;
 }
 
 #background {
