@@ -1,6 +1,6 @@
 package com.allinone.controller;
 
-import org.apache.tomcat.util.json.JSONParser;
+import com.alibaba.fastjson.JSON;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,8 +22,8 @@ public class UserController {
     public String getPic(){
         BaseUrlVo baseUrlVo = new BaseUrlVo();
         baseUrlVo.setUrlName("freeImage");
-        baseUrlVo.setUrlValue("http://www.baidu.com");
+        baseUrlVo.setUrl("http://www.baidu.com");
         baseUrlVo.setActive(true);
-        return baseUrlVo.toString();
+        return JSON.toJSONString(baseUrlVo);
     }
 }

@@ -8,7 +8,7 @@ package com.allinone.controller;
  */
 public class BaseUrlVo {
     private String urlName;
-    private String urlValue;
+    private String url;
     private boolean active;
 
 
@@ -20,12 +20,12 @@ public class BaseUrlVo {
         this.urlName = urlName;
     }
 
-    public String getUrlValue() {
-        return urlValue;
+    public String getUrl() {
+        return url;
     }
 
-    public void setUrlValue(String urlValue) {
-        this.urlValue = urlValue;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public boolean isActive() {
@@ -38,6 +38,6 @@ public class BaseUrlVo {
 
     @Override
     public String toString() {
-        return this.urlName + " : " + this.urlValue + " : " + this.active;
+        return this.urlName + " : " + this.url + " : " + this.active;
     }
 }

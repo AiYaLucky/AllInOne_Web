@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div id="welcome_main">
     <h1 id="welcome">{{ welcomeMessage }}</h1>
     <br>
-    <h4 id="text">
+    <h6 id="text">
       <br>
       这个导航的核心目的是为了让大家抛开各种无聊繁杂的网址记录
       <br>
@@ -14,16 +14,17 @@
       <br>
       Ai Ya！Lucky！~
       <br>
-    </h4>
+    </h6>
     <FreeImage></FreeImage>
   </div>
 
 </template>
 
 <script>
-import FreeImage from '../components/FreeImage.vue'
+import FreeImage from '../components/FreeImage.vue';
+
 export default {
-  name: 'FreeImage',
+  name: 'Welcome',
   components: {FreeImage},
   props: {
     welcomeMessage: String,

@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/FreeImage.vue'
+import HelloWorld from './components/Welcome.vue'
 
 export default {
   name: 'App',
@@ -33,7 +33,7 @@ export default {
 #background {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
