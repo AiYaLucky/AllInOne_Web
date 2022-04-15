@@ -1,6 +1,7 @@
 <template>
   <div class="btn_div">
-    <button class="btn_default">{{ buttonName }}</button>
+<!--    <button class="btn_default">{{ buttonName }}</button>-->
+    <button id="btn_default" class="button button-glow button-border button-rounded button-primary">{{ buttonName }}</button>
     <strong id="site_name">{{ name }}</strong>
     <p id="site_desc">{{ desc }}</p>
   </div>
@@ -10,6 +11,11 @@
 
 export default {
   name: "ButtonUrl",
+  methods:{
+    data:{
+
+    }
+  },
   props: {
     buttonName: {
       type: String,
@@ -28,38 +34,50 @@ export default {
 </script>
 
 <style scoped>
-.btn_default {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  left: 10%;
-  top: calc(50% - 25px);
-}
+@import "../assets/buttons.css";
 
 .btn_div {
-  width: 200px;
+  top: 30PX;
+  width: 220px;
   height: 100px;
-  left: 10px;
-  background-color: #4854ec;
+  background-color: rgba(214,213,183,85%);
   position: relative;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
+  border-radius: 10PX;
 }
+
+#btn_default {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15px;
+  color: #f4606c;
+  display: table-cell;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: rgba(244,96,108,55%);
+  left: 5%;
+  top: calc(50% - 30px);
+  border-radius: 20px 20px 20px 20px;
+  padding: 0;
+}
+
 #site_name {
   position: absolute;
   top: 15px;
   font-size: 20px;
-  color: #fff;
+  color: #19caad;
 }
 
 #site_desc {
   position: absolute;
-  top: 30px;
+  top: 35px;
   font-size: 14px;
   right: 35px;
-  left: 80px;
+  left: 78px;
   width: 120px;
-  color: #fff;
+  color: #0eb0c9;
 }
 </style>

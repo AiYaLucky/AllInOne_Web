@@ -1,8 +1,9 @@
 <template>
-  <div id="welcome_main">
+  <div>
     <h1 id="welcome">{{ welcomeMessage }}</h1>
     <br>
-    <h6 id="text">
+    <div id="text_div">
+      <span id="text">
       <br>
       这个导航的核心目的是为了让大家抛开各种无聊繁杂的网址记录
       <br>
@@ -14,18 +15,21 @@
       <br>
       Ai Ya！Lucky！~
       <br>
-    </h6>
-    <FreeImage></FreeImage>
+    </span>
+    </div>
+    <BarType></BarType>
+    <AlphaBg></AlphaBg>
   </div>
 
 </template>
 
 <script>
-import FreeImage from '../components/FreeImage.vue';
+import AlphaBg from "@/components/AlphaBg";
+import BarType from "@/components/BarType";
 
 export default {
   name: 'Welcome',
-  components: {FreeImage},
+  components: {BarType, AlphaBg},
   props: {
     welcomeMessage: String,
     description: String,
@@ -35,11 +39,20 @@ export default {
 
 <style scoped>
 #welcome {
-  color: #F4606C;
+  color: #ec2c64;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 40px;
 }
 
 #text {
-  color: #19CAAD;
-  margin-top: -50px;
+  color: #15559a;
+  position: fixed;
+  font-size: 14px;
+  font-weight: bolder;
+  left: 25vw;
+  right: 25vw;
+  top: 90px;
 }
 </style>

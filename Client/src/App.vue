@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img id="logo" alt="logo" src="./assets/logo.png">
-    <img id="background" src="./assets/background.jpg" alt="background">
+<!--    <img id="background" src="./assets/background.jpg" alt="background">-->
     <HelloWorld welcome-message='欢迎使用 ○ AiYaLucky ○ 导航'/>
   </div>
 </template>
@@ -28,11 +28,15 @@ export default {
 }
 
 #logo{
+  position: fixed;
+  top: 10px;
+  left: 42%;
+  right: auto;
 }
 
 #background {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: auto;
   position: fixed;
   top: 0;
   left: 0;
