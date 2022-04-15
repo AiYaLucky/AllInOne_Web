@@ -1,9 +1,6 @@
 <template>
   <div class="btn_main_div">
-    <ButtonUrl buttonName="前往" name="站点名字" desc="站点描述站点描述站点描述站点描述"></ButtonUrl>
-    <ButtonUrl buttonName="前往"></ButtonUrl>
-    <ButtonUrl buttonName="前往"></ButtonUrl>
-    <ButtonUrl buttonName="前往"></ButtonUrl>
+    <ButtonUrl buttonName="不" name="站点名字" desc="站点描述站点描述站点描述站点描述"></ButtonUrl>
   </div>
 </template>
 
@@ -33,8 +30,7 @@ export default {
 <style>
 
 .btn_main_div {
-  display: flex;
-  justify-content: space-around;
+
 }
 
 </style>

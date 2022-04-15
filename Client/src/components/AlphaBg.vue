@@ -1,10 +1,30 @@
 <template>
   <!--  背景白色半透明  -->
   <div class="bg_main_div">
-    <FreeImage></FreeImage>
-    <FreeImage></FreeImage>
-    <FreeImage></FreeImage>
-    <FreeImage></FreeImage>
+    <div class="div_list">
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+    </div>
+    <div class="div_list">
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+    </div>
+    <div class="div_list">
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+    </div>
+    <div class="div_list">
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+      <FreeImage></FreeImage>
+    </div>
   </div>
 
 </template>
@@ -39,9 +59,15 @@ export default {
   position: fixed;
   /*变宽颜色和粗细*/
   border: rgba(0, 0, 0, 0.01) solid 1px;
+
 }
 /*实现控件滚动的时候右侧滚动条的影藏*/
 .bg_main_div::-webkit-scrollbar { width: 0 !important }
 .bg_main_div { -ms-overflow-style: none; }
 .bg_main_div { overflow: -moz-scrollbars-none; }
+
+.div_list {
+  display: flex;
+  justify-content: space-around;
+}
 </style>

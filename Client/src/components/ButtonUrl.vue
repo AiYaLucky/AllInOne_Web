@@ -1,7 +1,9 @@
 <template>
   <div class="btn_div">
-<!--    <button class="btn_default">{{ buttonName }}</button>-->
-    <button id="btn_default" class="button button-glow button-border button-rounded button-primary">{{ buttonName }}</button>
+    <button id="btn_default" class="button button-glow button-border button-rounded button-primary">{{
+        buttonName
+      }}
+    </button>
     <strong id="site_name">{{ name }}</strong>
     <p id="site_desc">{{ desc }}</p>
   </div>
@@ -11,10 +13,8 @@
 
 export default {
   name: "ButtonUrl",
-  methods:{
-    data:{
-
-    }
+  methods: {
+    data: {}
   },
   props: {
     buttonName: {
@@ -40,7 +40,7 @@ export default {
   top: 30PX;
   width: 220px;
   height: 100px;
-  background-color: rgba(214,213,183,85%);
+  background-color: rgba(214, 213, 183, 55%);
   position: relative;
   margin-top: 30px;
   border-radius: 10PX;
@@ -53,14 +53,14 @@ export default {
   text-align: center;
   vertical-align: middle;
   line-height: 15px;
-  color: #f4606c;
+  color: #0014ff;
   display: table-cell;
   font-size: 16px;
   font-weight: bolder;
-  background-color: rgba(244,96,108,55%);
+  background-color: rgba(244, 96, 108, 55%);
   left: 5%;
   top: calc(50% - 30px);
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 50px 50px 50px 50px;
   padding: 0;
 }
 
