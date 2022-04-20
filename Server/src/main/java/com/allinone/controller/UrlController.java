@@ -35,7 +35,9 @@ public class UrlController {
 
 
     /**
-     * 获取链接
+     * 获取网站配置数据
+     * @param id 网站id
+     * @return  返回的json数据
      */
     @RequestMapping("/geturl/{id}")
     public String getPic(@PathVariable("id") String id) {

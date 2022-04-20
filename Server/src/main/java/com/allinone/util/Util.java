@@ -38,7 +38,7 @@ public class Util {
     }
 
     public static JSONArray getUrlConfig() throws IOException {
-        ClassPathResource resource = new ClassPathResource("../config/url.json");
+        ClassPathResource resource = new ClassPathResource("config/url.json");
         File file = resource.getFile();
         String dbStr = FileUtils.readFileToString(file, "utf-8");
         JSONArray jsonArray = JSON.parseArray(dbStr);

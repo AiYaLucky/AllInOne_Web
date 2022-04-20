@@ -1,0 +1,227 @@
+[
+  {
+    "id": "1",
+    "name": "pexels图片商用",
+    "url": "https://www.pexels.com/",
+    "desc": "世界知名图片和视频无版权网站",
+    "rule": "Pexels 上的所有图片和视频均可免费下载和使用。"
+  },
+  {
+    "id": "2",
+    "name": "unsplash",
+    "url": "https://unsplash.com/",
+    "description": "风景为主，分类搜索很方便",
+    "rule": "所有照片都可以免费下载和使用于商业和非商业目的。"
+  },
+  {
+    "id": "3",
+    "name": "pixabay",
+    "url": "https://pixabay.com/zh/",
+    "description": "图片、插画、音乐、视频、矢量图、声效都有，但是加载速度慢",
+    "rule": "所有内容(如图片、视频、音乐)Pixabay可免费用于商业和非商业使用在印刷和数字,除了“不允许”中提到的情况下。"
+  },
+  {
+    "id": "4",
+    "name": "photock",
+    "url": "https://www.photock.asia/",
+    "description": "日本免费摄影网站",
+    "rule": "免费的图片素材网站，可用于商业目的，没有麻烦的限制"
+  },
+  {
+    "id": "5",
+    "name": "stocksnap",
+    "url": "https://stocksnap.io/",
+    "description": "免费的照片素材网站",
+    "rule": "CC0许可协议，可以免费下载和使用及商用，但是是针对作品本身，如果出现人物肖像之类的其他东西是不在这个CC0的协议范围内的。"
+  },
+  {
+    "id": "6",
+    "name": "洛雪音乐助手",
+    "url": "https://github-do.panbaidu.cn/https://github.com/lyswhut/lx-music-desktop/releases/download/v1.20.0/lx-music-desktop-v1.20.0-x64-Setup.exe",
+    "description": "下载功能需要在设置里面开启",
+    "rule": ""
+  },
+  {
+    "id": "7",
+    "name": "MusicTools无损音乐下载",
+    "url": "https://www.yijingying.com/html/musictools/",
+    "description": "可以下载很多无损格式音乐。",
+    "rule": "无"
+  },
+  {
+    "id": "8",
+    "name": "白嫖者",
+    "url": "https://www.baipiaozhe.com/",
+    "description": "免费的在线视频网站",
+    "rule": "无"
+  },
+  {
+    "id": "9",
+    "name": "真不卡",
+    "url": "https://www.zhenbuka3.com/",
+    "description": "免费的在线视频网站",
+    "rule": "无"
+  },
+  {
+    "id": "10",
+    "name": "天空影视",
+    "url": "https://www.tkys.tv/",
+    "description": "优质蓝光视频网站",
+    "rule": "无"
+  },
+  {
+    "id": "11",
+    "name": "天空影视",
+    "url": "https://www.tkys.tv/",
+    "description": "优质蓝光视频网站",
+    "rule": "无"
+  },
+  {
+    "id": "12",
+    "name": "555电影",
+    "url": "http://www.555dianying.cc/",
+    "description": "视频加载速度挺快的，有一些小广告，但是无飘窗广告。",
+    "rule": "无"
+  },
+  {
+    "id": "13",
+    "name": "茶杯狐",
+    "url": "https://cupfox.app/",
+    "description": "资源不错的视频在线网站，有安卓端APP。",
+    "rule": "无"
+  },
+  {
+    "id": "14",
+    "name": "低端影视",
+    "url": "https://ddrk.me/",
+    "description": "更新慢，但是都是超清片源。",
+    "rule": "无"
+  },
+  {
+    "id": "15",
+    "name": "追新番",
+    "url": "http://www.fanxinzhui.com/",
+    "description": "日剧，日本电影的下载网站，速度不错，但是都是网盘分享。",
+    "rule": "无"
+  },
+  {
+    "id": "16",
+    "name": "韩剧集网",
+    "url": "https://www.jujitv.net/",
+    "description": "包含，电视剧、电影、综艺、咨询、网剧、下载的一个韩剧网站。",
+    "rule": "无"
+  },
+  {
+    "id": "17",
+    "name": "韩剧集网下载",
+    "url": "https://www.jujitv.net/hanjuxiazai/",
+    "description": "韩剧集网的下载页面。",
+    "rule": "无"
+  },
+  {
+    "id": "18",
+    "name": "英剧网-冰冰字幕组",
+    "url": "https://www.icezmz.com/",
+    "description": "冰冰字幕组翻译的英国电视剧，电影，纪录片，支持阿里云盘和百度网盘。",
+    "rule": "无"
+  },
+  {
+    "id": "19",
+    "name": "高清电台",
+    "url": "https://gaoqing.fm/",
+    "description": "高清视频资源磁力下载网站。",
+    "rule": "无"
+  },
+  {
+    "id": "20",
+    "name": "磁力熊",
+    "url": "https://www.cilixiong.com/",
+    "description": "1080P视频磁力下载站。",
+    "rule": "无"
+  },
+  {
+    "id": "21",
+    "name": "悠悠MP4",
+    "url": "https://www.uump4.net/",
+    "description": "简洁列表，支持搜索下载，资源来自网络。",
+    "rule": "无"
+  },
+  {
+    "id": "22",
+    "name": "office2016(win+mac)",
+    "url": "https://pan.baidu.com/s/1pziSRYM-8vt1MpvS8V55Og?pwd=aiya",
+    "description": "提取码：aiya,2016版本的office。百度网盘",
+    "rule": "无"
+  },
+  {
+    "id": "23",
+    "name": "Adobe PhotoShop 2020 V21.2",
+    "url": "https://pan.baidu.com/s/19s7ijrBk_nItva6432-BxQ?pwd=aiya",
+    "description": "提取码：aiya,20V21版本的ps。百度网盘,直装免破解",
+    "rule": "无"
+  },
+  {
+    "id": "24",
+    "name": "ToDesk-远程软件",
+    "url": "https://www.todesk.com/",
+    "description": "强大免费的远程软件。",
+    "rule": "无"
+  },
+  {
+    "id": "25",
+    "name": "Grab4K影视下载",
+    "url": "https://www.grab4k.com/",
+    "description": "一个下载4K影视资源的网站，不错~",
+    "rule": "无"
+  },
+  {
+    "id": "26",
+    "name": "中国大学慕课网MOOC",
+    "url": "https://www.icourse163.org/",
+    "description": "更针对于大学生群体，包括不限于计算机、考研、英语、经济等等...",
+    "rule": "无"
+  },
+  {
+    "id": "27",
+    "name": "慕课网",
+    "url": "https://www.imooc.com/",
+    "description": "针对程序员的群体，包括前、后端、移动端、基础、运维、测试等等",
+    "rule": "无"
+  },
+  {
+    "id": "28",
+    "name": "哔哩哔哩bilibili",
+    "url": "https://www.bilibili.com/",
+    "description": "不仅仅是二次元聚集地，更是一个全方位学习平台，不信你搜索ps教程之类的字眼。",
+    "rule": "无"
+  },
+  {
+    "id": "29",
+    "name": "W3school",
+    "url": "https://www.w3school.com.cn/",
+    "description": "各种编程语言的文字版本，如果觉得视频不友好，可以看这些文字版本的。",
+    "rule": "无"
+  },
+  {
+    "id": "",
+    "name": "",
+    "url": "",
+    "description": "",
+    "rule": "无"
+  },
+  {
+    "id": "",
+    "name": "",
+    "url": "",
+    "description": "",
+    "rule": "无"
+  },
+  {
+    "id": "",
+    "name": "",
+    "url": "",
+    "description": "",
+    "rule": "无"
+  }
+]
+
