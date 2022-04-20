@@ -3,6 +3,16 @@
 
 <head>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+        let baseUrl = 'http://localhost:8081/';
+        function senRequest(urlId) {
+            alert(baseUrl + "/url/geturl/" + urlId);
+        $.ajax.get( baseUrl + "/url/geturl/" + urlId, function( data ) {
+            let result = JSON.parse(data);
+            window.open(result.url, '_blank')
+            console.log( result );
+        });
+    }
+
     </script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -184,7 +194,7 @@
         <div class="row">
             <div class="col-sm-3">
                 <div class="xe-widget xe-conversations box2 label-info"
-                     onclick="window.open('https://www.subaibaiys.com/', '_blank')" data-toggle="tooltip"
+                     onclick="senRequest(1)" data-toggle="tooltip"
                      data-placement="bottom" title="" data-original-title="https://dribbble.com/">
                     <div class="xe-comment-entry">
                         <a class="xe-user-img">
@@ -811,14 +821,14 @@
     /*点击页面的触发服务器消息*/
     $('.xe-widget').click(function () {
         $.ajax({
-            before: function (){
-              alert("准备发送消息！~");
+            before: function () {
+                alert("准备发送消息！~");
             },
-           url: "http://localhost:8081/user/getPic",
+            url: "http://localhost:8081/user/getPic",
             success: function (result) {
                 let obj = JSON.parse(result);
                 console.log(obj);
-                window.open(obj.url,'_blank')
+                window.open(obj.url, '_blank')
             }
         });
     })
