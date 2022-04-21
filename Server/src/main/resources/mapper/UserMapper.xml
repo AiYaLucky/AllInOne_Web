@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.allinone.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.allinone.entity.User">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="account" column="account" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="nickname" column="nickname" jdbcType="VARCHAR"/>
+        <result property="email" column="email" jdbcType="VARCHAR"/>
+        <result property="lastLoginTime" column="last_login_time" jdbcType="BIGINT"/>
+        <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account,password,
+        nickname,email,last_login_time,
+        create_time
+    </sql>
+    <insert id="insertByUser">
+        insert into user (id, account, password, nickname, email, last_login_time, create_time)
+        values (
+                #{id,jdbcType=BIGINT},
+                #{account,jdbcType=VARCHAR},
+                #{password,jdbcType=VARCHAR},
+                #{nickname,jdbcType=VARCHAR},
+                #{email,jdbcType=VARCHAR},
+                #{lastLoginTime,jdbcType=BIGINT},
+                #{createTime,jdbcType=TIMESTAMP}
+               );
+    </insert>
+    <select id="selectByAccount" resultType="com.allinone.entity.User">
+        select *
+        from user
+        where account = #{account,jdbcType=INTEGER}
+    </select>
+</mapper>

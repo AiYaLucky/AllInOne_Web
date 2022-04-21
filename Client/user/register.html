@@ -20,22 +20,38 @@
         function register() {
             $.ajax({
                 type: "POST",
+                dataType: "json",
+                // contentType: "application/json",
                 url: baseUrl,
                 data: {
                     "account": $("#account").val(),
                     "password": $("#password").val(),
-                    "nickName": $("#nickName").val(),
+                    "nickname": $("#nickname").val(),
                     "email": $("#email").val()
                 },
-                dataType: "json",
                 success: function (result) {
+                    if (result === -1) {
+                        console.log("该用户名已经存在啦~");
+                        return false;
+                    }
+                    alert("注册成功~");
                     //在 sessionStorage 中存储玩家的登录状态数据
-                    localStorage.setItem(result.account, result.active);
+                    let jsonResult = JSON.parse(result);
+                    alert(jsonResult);
+                    localStorage.setItem(jsonResult.account, jsonResult.active);
+                    window.open("../cn/index.html")
+                    return false;
                 },
-                error:function (error) {
-                    console.log("出错啦！~" + error);
+                error: function (xhr,textStatus,errorThrown) {
+                    console.log("-------出错咯1~");
+                    console.log(xhr);
+                    console.log("-------出错咯2~");
+                    console.log(textStatus);
+                    console.log("-------出错咯3~");
+                    console.log(errorThrown);
                 }
             });
+            return false;
         }
     </script>
 </head>
@@ -46,9 +62,7 @@
         <i class="material-icons lock">lock</i> 注册
     </div>
 
-    <form>
-
-
+    <form id="form_info">
         <div class="input">
             <div class="input-addon">
                 <i class="material-icons">account_box</i>
@@ -69,7 +83,7 @@
             <div class="input-addon">
                 <i class="material-icons">face</i>
             </div>
-            <input id="nickName" placeholder="昵称" type="text" required class="validate" autocomplete="off">
+            <input id="nickname" placeholder="昵称" type="text" required class="validate" autocomplete="off">
         </div>
         <div class="input">
             <div class="input-addon">
@@ -79,9 +93,8 @@
         </div>
 
         <div class="clearfix"></div>
-        <input onclick="register()" type="submit" style="margin-top: 30px" value="Register"/>
+        <input onclick="register()" type="button" style="margin-top: 30px" value="注  册"/>
     </form>
-
     <div class="register">
         已经注册过账号了？
         <a href="login.html">
