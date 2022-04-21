@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #303641;
+        }
+    </style>
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script>
+        let baseUrl = 'http://localhost:8081/user/register';
+
+        function register() {
+            $.ajax({
+                type: "POST",
+                url: baseUrl,
+                data: {
+                    "account": $("#account").val(),
+                    "password": $("#password").val(),
+                    "nickName": $("#nickName").val(),
+                    "email": $("#email").val()
+                },
+                dataType: "json",
+                success: function (result) {
+                    //在 sessionStorage 中存储玩家的登录状态数据
+                    localStorage.setItem(result.account, result.active);
+                },
+                error:function (error) {
+                    console.log("出错啦！~" + error);
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+<div id="container-register">
+    <div id="title">
+        <i class="material-icons lock">lock</i> 注册
+    </div>
+
+    <form>
+
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">account_box</i>
+            </div>
+            <input id="account" placeholder="账号" type="text" required class="validate" autocomplete="off">
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">vpn_key</i>
+            </div>
+            <input id="password" placeholder="密码" type="password" required class="validate" autocomplete="off">
+        </div>
+
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">face</i>
+            </div>
+            <input id="nickName" placeholder="昵称" type="text" required class="validate" autocomplete="off">
+        </div>
+        <div class="input">
+            <div class="input-addon">
+                <i class="material-icons">email</i>
+            </div>
+            <input id="email" placeholder="邮箱" type="email" required class="validate" autocomplete="off">
+        </div>
+
+        <div class="clearfix"></div>
+        <input onclick="register()" type="submit" style="margin-top: 30px" value="Register"/>
+    </form>
+
+    <div class="register">
+        已经注册过账号了？
+        <a href="login.html">
+            <button id="register-link">前往登录~</button>
+        </a>
+    </div>
+</div>
+</body>
+
+</html>

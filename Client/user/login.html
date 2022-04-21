@@ -1,5 +1,4 @@
-<html>
-
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
@@ -13,6 +12,29 @@
             background-color: #303641;
         }
     </style>
+    <script src="../assets/js/jquery-1.11.1.min.js"></script>
+    <script>
+        let baseUrl = 'http://localhost:8081/user/login';
+
+        function login() {
+            $.ajax({
+                type: "POST",
+                url: baseUrl,
+                data: {
+                    "account": $("#account").val(),
+                    "password": $("#password").val()
+                },
+                dataType: "json",
+                success: function (result) {
+                    //在 sessionStorage 中存储玩家的登录状态数据
+                    localStorage.setItem(result.account, result.active);
+                },
+                error:function (error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -21,13 +43,13 @@
         <i class="material-icons lock">lock</i> 登录
     </div>
 
-    <form>
+    <div>
         <br>
         <div class="input">
             <div class="input-addon">
                 <i class="material-icons">face</i>
             </div>
-            <input id="username" placeholder="昵称" type="text" required class="validate" autocomplete="off">
+            <input id="account" placeholder="账号" type="text" required class="validate" autocomplete="off">
         </div>
 
         <div class="clearfix"></div>
@@ -42,8 +64,8 @@
         <div class="remember-me">
         </div>
         <br>
-        <input type="submit" value="登录"/>
-    </form>
+        <input onclick="login()" type="submit" value="登录"/>
+    </div>
 
     <div class="forgot-password">
         <a href="#">忘记密码？</a>
