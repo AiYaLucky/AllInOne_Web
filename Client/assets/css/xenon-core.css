@@ -927,10 +927,12 @@ body {
     }
 }
 
+
 .sidebar-menu {
     display: table-cell;
     position: relative;
-    width: 280px;
+    /*左侧菜单栏宽度*/
+    width: 200px;
     background: #2c2e2f;
     z-index: 1
 }
@@ -1204,6 +1206,7 @@ body {
 .sidebar-menu.fixed .sidebar-menu-inner {
     position: fixed;
     left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
     width: inherit;
